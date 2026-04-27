@@ -5,7 +5,7 @@ A personal knowledge base powered by LLM agents, based on [Andrej Karpathy's](ht
 ## Quick Start
 
 ```bash
-cd labs/llm-wiki-personal && docker-compose up -d
+cd llm-wiki-personal && docker-compose up -d
 ```
 
 Access wiki at: **http://localhost:8082**
