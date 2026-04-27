@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  llm-wiki-personal:
+    image: nginx:latest
+    container_name: llm-wiki-personal
+    ports:
+      - "8082:80"
+    volumes:
+      - ./public:/usr/share/nginx/html:ro
+      - ./wiki:/wiki:ro
+      - ./raw:/raw:ro
+    restart: unless-stopped
